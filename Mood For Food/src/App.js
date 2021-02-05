@@ -7,15 +7,6 @@ import Burgers from "./components/Burgers"
 import parseLink from "./getId"
 import templateVotes from "./templateVotes"
 
-// To-do: 
-//    - make parseLink work
-//    - begin voting system
-//    - store data in json file after vote (burger000)
-//   - mutliple foods? Dropdown menu?
-// Greta thunberg gif
-// make sure it stores 0
-// get rid of currentVote
-
 class App extends Component {
     constructor() {
         super();
@@ -35,7 +26,6 @@ class App extends Component {
         .catch((error) => { return error });
         
         const json = await response.json();
-        console.log("Found an image, setting state now")
         this.setState({ imgLink: json.image, imgId: parseLink(json.image)})
     }
     

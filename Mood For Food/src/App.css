@@ -160,6 +160,8 @@ h1 {
 	font-size:15px;
 	font-weight:bold;
 	text-decoration:none;
+    -webkit-box-shadow: 5px 5px 6px -3px #000000; 
+    box-shadow: 5px 5px 6px -3px #000000;
 }
 
 .voter:hover {
