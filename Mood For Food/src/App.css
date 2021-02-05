@@ -1,0 +1,142 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-image: url('https://i.pinimg.com/originals/c6/eb/90/c6eb9018934a3af9324955a1f99854c5.png');
+    background-repeat: repeat;
+    background-size: 50%;
+    min-width: 600px;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    max-width: 800px;
+    background: #ffffffe0;
+    border: 10px ridge #127D00;
+    margin: 5% auto 5% auto;
+}
+
+.mainContent {
+    overflow: hidden;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burger {
+    margin: 1%;
+    display: inline-block;
+    width: min-content;
+    animation-name: burgerSlide;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* .burger p {
+    width: min-content;
+    animation-name: burgerSpin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 1em;
+} */
+
+@keyframes burgerSlide {
+    from {
+        transform: translateX(-38vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes burgerSpin {
+    from {
+        transform: rotate(0Deg);
+    }
+    to {
+        transform: rotate(360Deg);
+    }
+}
+
+.burgerLine {
+    white-space: nowrap;
+    justify-content: right;
+    overflow: hidden;
+    user-select: none;
+}
+
+h1 {
+    text-shadow: 2px 2px #DFDFDF;
+    width: fit-content;
+}
+
+.burgerBtn {
+    width: fit-content;
+    margin: auto;
+}
+
+.burgerBtn button {
+    background: #F63D3D;
+    background-image: -webkit-linear-gradient(top, #F63D3D, #D01E1E);
+    background-image: -moz-linear-gradient(top, #F63D3D, #D01E1E);
+    background-image: -ms-linear-gradient(top, #F63D3D, #D01E1E);
+    background-image: -o-linear-gradient(top, #F63D3D, #D01E1E);
+    background-image: -webkit-gradient(to bottom, #F63D3D, #D01E1E);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 20px;
+    
+    border: solid #DD380D 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.burgerBtn button:hover {
+   border: solid #DD380D 1px;
+   background: #D01E1E;
+   background-image: -webkit-linear-gradient(top, #D01E1E, #F63D3D);
+   background-image: -moz-linear-gradient(top, #D01E1E, #F63D3D);
+   background-image: -ms-linear-gradient(top, #D01E1E, #F63D3D);
+   background-image: -o-linear-gradient(top, #D01E1E, #F63D3D);
+   background-image: -webkit-gradient(to bottom, #D01E1E, #F63D3D);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.burgerImg {
+    max-width: 500px;
+    border: 2px solid #400000;
+    min-height: 300px;
+    
+}
+
+.imgInfo {
+    display: grid;
+    grid-template-columns: auto 20% 20%;
+}
+
+.voter {
+    width: fit-content;
+    height: min-content;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 10px;
+    color: black;
+}
+
+.voter p {
+    margin: 0;
+}
