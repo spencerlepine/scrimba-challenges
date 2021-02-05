@@ -71,6 +71,8 @@ body {
 h1 {
     text-shadow: 2px 2px #DFDFDF;
     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .burgerBtn {
@@ -117,26 +119,72 @@ h1 {
 
 .burgerImg {
     max-width: 500px;
-    border: 2px solid #400000;
-    min-height: 300px;
-    
+    border: 2px solid #400000; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px; 
 }
 
 .imgInfo {
+    width: fit-content;
+    margin: auto;
     display: grid;
-    grid-template-columns: auto 20% 20%;
+    grid-template-columns: auto;
+    text-align: left;
+}
+
+.imgInfo div h3 {
+    padding: 0;
+    height: min-content;
+    margin-top: auto;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .voter {
     width: fit-content;
     height: min-content;
-    padding: 4px;
-    border-radius: 4px;
-    border: 1px solid black;
+    padding: 8px;
     margin: 10px;
-    color: black;
+   
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	/* background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%); */
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.voter:hover {
+	filter: brightness(0.9);
 }
 
 .voter p {
     margin: 0;
+    width: max-content;
+}
+
+a {
+    color: #450000;
+    text-shadow: 2px 1px #8c00003f;
+}
+
+.voterBox {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: min-content;
+    margin: 0;
+    border: none;
+}
+
+.voter:active {
+    transition: 100ms;
+    transform: scale(1.1);
 }

@@ -1,17 +1,13 @@
 import React, { Component } from "react"
 import Source from "./Source"
+import Voter from "./Voter"
 
 class ImgInfo extends Component {
-    render() {
+    render() { 
         return (
             <div className="imgInfo">
-                <Source link={this.props.imgLink} />
-                <div className="voter">
-                    <p>Yum! 😋</p>
-                </div>
-                <div className="voter">
-                    <p>Yuck! 🤢</p>
-                </div>
+                <Voter id={this.props.id} vote={this.props.vote} storeVote={this.props.storeVote} />
+                <Source link={this.props.source} />
             </div>
         )
     }
